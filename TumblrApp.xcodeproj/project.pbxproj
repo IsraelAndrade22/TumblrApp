@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		860305CAE9FA1890D02492C9 /* Pods_TumblrApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCE8894C296E0CF00EC63F8 /* Pods_TumblrApp.framework */; };
+		8E1AE57720268E1200C0D6D8 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1AE57620268E1200C0D6D8 /* PhotoCell.swift */; };
 		8EA1730F201FD96F00EEF07B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1730E201FD96F00EEF07B /* AppDelegate.swift */; };
 		8EA17314201FD96F00EEF07B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA17312201FD96F00EEF07B /* Main.storyboard */; };
 		8EA17316201FD96F00EEF07B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA17315201FD96F00EEF07B /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		60D2DA10047D51C422AA5896 /* Pods_TumblrAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TumblrAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD71307F461B5D0B056DD70 /* Pods-TumblrApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrApp/Pods-TumblrApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7DAB81A73839CE9EFFCAA729 /* Pods-TumblrAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrAppUITests/Pods-TumblrAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1AE57620268E1200C0D6D8 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		8EA1730B201FD96F00EEF07B /* TumblrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA1730E201FD96F00EEF07B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EA17313201FD96F00EEF07B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,12 +126,13 @@
 		8EA1730D201FD96F00EEF07B /* TumblrApp */ = {
 			isa = PBXGroup;
 			children = (
+				8EA1733E201FDF2F00EEF07B /* PhotosViewController.swift */,
 				8EA1730E201FD96F00EEF07B /* AppDelegate.swift */,
 				8EA17312201FD96F00EEF07B /* Main.storyboard */,
 				8EA17315201FD96F00EEF07B /* Assets.xcassets */,
 				8EA17317201FD96F00EEF07B /* LaunchScreen.storyboard */,
 				8EA1731A201FD96F00EEF07B /* Info.plist */,
-				8EA1733E201FDF2F00EEF07B /* PhotosViewController.swift */,
+				8E1AE57620268E1200C0D6D8 /* PhotoCell.swift */,
 			);
 			path = TumblrApp;
 			sourceTree = "<group>";
@@ -342,14 +345,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TumblrApp/Pods-TumblrApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/OAuthSwiftAlamofire/OAuthSwiftAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwiftAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -463,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA1730F201FD96F00EEF07B /* AppDelegate.swift in Sources */,
+				8E1AE57720268E1200C0D6D8 /* PhotoCell.swift in Sources */,
 				8EA1733F201FDF2F00EEF07B /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

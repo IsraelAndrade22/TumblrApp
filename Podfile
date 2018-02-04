@@ -6,6 +6,7 @@ target 'TumblrApp' do
   use_frameworks!
 
   # Pods for TumblrApp
+  pod 'AlamofireImage'
 
   target 'TumblrAppTests' do
     inherit! :search_paths
